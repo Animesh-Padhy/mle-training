@@ -16,3 +16,17 @@ The following techniques have been used:
 
 ## To excute the script
 python < scriptname.py >
+
+
+## instructions on how to run the code.
+- download the nonstandard.py file into the linux home directory
+- create a new environment named 'mle-dev'
+  (base) animesh45@TIGER04432:~$ conda create --name mle-dev
+- activate the environment mle-env
+  (base) animesh45@TIGER04432:~$ conda activate mle-dev
+- run the python file
+  (mle-dev) animesh45@TIGER04432:~$ python3 nonstandardcode.py
+- export the environments file as env.yml
+  (mle-dev) animesh45@TIGER04432:~$ conda env export --name mle-dev > env.yml
+
+  
