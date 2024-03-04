@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: house-price-prediction
+Version: 0.1
+Requires-Dist: argparse
+Requires-Dist: six
+Requires-Dist: urllib3
+Requires-Dist: pandas
+Requires-Dist: joblib
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: scipy
