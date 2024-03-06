@@ -8,7 +8,6 @@ DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
 HOUSING_PATH = os.path.join("data", "housing")
 HOUSING_URL = DOWNLOAD_ROOT + "data/housing/housing.tgz"
 
-
 LOG_DIR = os.path.join("../..", "logs")
 os.makedirs(LOG_DIR, exist_ok=True)
 LOG_FILE = os.path.join(LOG_DIR, "ingest_data.log")
