@@ -7,7 +7,7 @@ from house_price_prediction import ingest_data
 
 class TestDataIngestion(unittest.TestCase):
     def test_fetch_housing_data(self):
-        output_folder = "../../datasets"
+        output_folder = "../../data"
         os.makedirs(output_folder, exist_ok=True)
         ingest_data.fetch_housing_data(output_folder)
         file_path = os.path.join(output_folder, "housing", "housing.csv")

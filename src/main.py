@@ -2,14 +2,12 @@ import subprocess
 
 
 def main():
-    subprocess.run(
-        ["python", "house_price_prediction/ingest_data.py", "../../datasets"]
-    )
+    subprocess.run(["python", "house_price_prediction/ingest_data.py", "../../data"])
     subprocess.run(
         [
             "python",
             "house_price_prediction/train.py",
-            "../../datasets/housing",
+            "../../data/housing",
             "./model",
         ]
     )
@@ -18,7 +16,7 @@ def main():
             "python",
             "house_price_prediction/score.py",
             "./model/trained_model.pkl",
-            "../../datasets/housing",
+            "../../data/housing",
         ]
     )
     print("end")

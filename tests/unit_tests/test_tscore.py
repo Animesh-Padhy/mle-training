@@ -8,7 +8,7 @@ class TestScore(unittest.TestCase):
     def test_evaluate_model(self):
 
         model_path = "./model/trained_model.pkl"
-        input_folder = "../../datasets/housing/housing.csv"
+        input_folder = "../../data/housing/housing.csv"
         housing = pd.read_csv(input_folder)
         housing_labels = housing["median_house_value"].copy()
         housing = housing.drop("median_house_value", axis=1)

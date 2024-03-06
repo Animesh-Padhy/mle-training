@@ -5,8 +5,8 @@ from six.moves import urllib
 import logging
 
 DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
-HOUSING_PATH = os.path.join("datasets", "housing")
-HOUSING_URL = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
+HOUSING_PATH = os.path.join("data", "housing")
+HOUSING_URL = DOWNLOAD_ROOT + "data/housing/housing.tgz"
 
 
 LOG_DIR = os.path.join("../..", "logs")
@@ -36,13 +36,13 @@ def fetch_housing_data(housing_path):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Download and create training and validation datasets."
+        description="Download and create training and validation data."
     )
     parser.add_argument(
         "output_folder",
         nargs="?",
-        default="../../datasets",
-        help="Path to the output folder for datasets.",
+        default="../../data",
+        help="Path to the output folder for data.",
     )
     args = parser.parse_args()
     logging.info("Started fetching data.")
