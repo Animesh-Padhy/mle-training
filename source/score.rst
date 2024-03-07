@@ -10,14 +10,14 @@ This document outlines the steps to score a machine learning model using the `sc
 Functionality
 -------------
 
-The `score_model` function in the script loads the trained model, makes predictions on the input data, and evaluates its performance using appropriate metrics.
+The `score_model` function in the script loads the trained model, makes predictions on the input data, and evaluates its performance using appropriate metrics (rmse)
 
 - **score_model**:
   - Purpose: Loads the trained model, makes predictions, and evaluates performance.
   - Arguments:
     - `model_path` (str): Path to the trained model file.
     - `data_path` (str): Path to the input dataset folder.
-  - Returns: Evaluation metrics.
+  - Returns: Evaluation metrics - Root Mean Squared Error
 
 Logging
 -------
