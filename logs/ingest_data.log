@@ -10,3 +10,27 @@
 2024-03-04 09:35:07,690 - INFO - Started fetching data.
 2024-03-04 09:35:07,814 - INFO - Data fetched successfully.
 2024-03-04 09:35:07,814 - INFO - Finished fetching data.
+2024-03-07 00:52:49,622 - INFO - Started fetching data.
+2024-03-07 00:52:49,972 - ERROR - Error fetching data: HTTP Error 404: Not Found
+2024-03-07 00:52:49,974 - INFO - Finished fetching data.
+2024-03-07 01:09:03,806 - INFO - Started fetching data.
+2024-03-07 01:09:04,185 - ERROR - Error fetching data: HTTP Error 404: Not Found
+2024-03-07 01:09:04,186 - INFO - Finished fetching data.
+2024-03-07 01:10:45,292 - INFO - Started fetching data.
+2024-03-07 01:10:45,707 - ERROR - Error fetching data: HTTP Error 404: Not Found
+2024-03-07 01:10:45,708 - INFO - Finished fetching data.
+2024-03-07 01:11:13,554 - INFO - Started fetching data.
+2024-03-07 01:11:13,647 - ERROR - Error fetching data: HTTP Error 404: Not Found
+2024-03-07 01:11:13,648 - INFO - Finished fetching data.
+2024-03-07 01:12:29,301 - INFO - Started fetching data.
+2024-03-07 01:12:29,743 - ERROR - Error fetching data: HTTP Error 404: Not Found
+2024-03-07 01:12:29,745 - INFO - Finished fetching data.
+2024-03-07 01:13:32,482 - INFO - Started fetching data.
+2024-03-07 01:13:32,927 - ERROR - Error fetching data: HTTP Error 404: Not Found
+2024-03-07 01:13:32,929 - INFO - Finished fetching data.
+2024-03-07 01:14:03,678 - INFO - Started fetching data.
+2024-03-07 01:14:03,778 - ERROR - Error fetching data: HTTP Error 404: Not Found
+2024-03-07 01:14:03,780 - INFO - Finished fetching data.
+2024-03-07 09:38:53,456 - INFO - Started fetching data.
+2024-03-07 09:38:53,836 - ERROR - Error fetching data: HTTP Error 404: Not Found
+2024-03-07 09:38:53,837 - INFO - Finished fetching data.
