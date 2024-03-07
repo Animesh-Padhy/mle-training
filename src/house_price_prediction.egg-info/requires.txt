@@ -1,0 +1,8 @@
+argparse
+six
+urllib3
+pandas
+joblib
+scikit-learn
+numpy
+scipy
