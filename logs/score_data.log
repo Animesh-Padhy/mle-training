@@ -1,0 +1,21 @@
+2024-03-14 23:41:41,391 - INFO - Fetched housing data successfully.
+2024-03-14 23:45:37,065 - INFO - Fetched housing data successfully.
+2024-03-14 23:46:04,618 - INFO - Fetched housing data successfully.
+2024-03-14 23:47:46,650 - INFO - Model Trained.
+2024-03-15 00:09:20,820 - INFO - Fetched housing data successfully.
+2024-03-15 00:10:01,040 - INFO - Fetched housing data successfully.
+2024-03-15 00:11:42,455 - INFO - Model Trained.
+2024-03-15 00:11:42,583 - ERROR - Error: could not convert string to float: 'NEAR BAY'
+2024-03-15 00:16:09,330 - INFO - Fetched housing data successfully.
+2024-03-15 00:17:50,003 - INFO - Model Trained.
+2024-03-15 00:17:50,197 - ERROR - Error: could not convert string to float: 'NEAR BAY'
+2024-03-15 00:21:01,527 - INFO - Fetched housing data successfully.
+2024-03-15 00:22:49,063 - INFO - Model Trained.
+2024-03-15 00:22:49,229 - ERROR - Error: could not convert string to float: 'NEAR BAY'
+2024-03-15 00:25:08,852 - INFO - Fetched housing data successfully.
+2024-03-15 00:27:01,528 - INFO - Model Trained.
+2024-03-15 00:27:01,684 - ERROR - Error: could not convert string to float: 'NEAR BAY'
+2024-03-15 00:33:11,774 - INFO - Fetched housing data successfully.
+2024-03-15 00:35:52,781 - INFO - Fetched housing data successfully.
+2024-03-15 00:37:40,893 - INFO - Model Trained.
+2024-03-15 00:37:41,076 - ERROR - Error: could not convert string to float: 'NEAR BAY'

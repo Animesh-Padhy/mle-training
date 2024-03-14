@@ -16,6 +16,7 @@ from sklearn.preprocessing import OneHotEncoder
 
 
 from sklearn.base import BaseEstimator, TransformerMixin
+import mlflow
 
 
 class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
@@ -34,7 +35,7 @@ class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
         ]
 
 
-LOG_DIR = os.path.join("..", "logs")
+LOG_DIR = os.path.join(".", "logs")
 os.makedirs(LOG_DIR, exist_ok=True)
 LOG_FILE = os.path.join(LOG_DIR, "train_data.log")
 
@@ -50,21 +51,8 @@ def load_housing_data(housing_path):
     return pd.read_csv(csv_path)
 
 
-def main():
-    """
-    Main function to train the model.
-    """
-    parser = argparse.ArgumentParser(description="Train the model.")
-    parser.add_argument("input_folder", help="Path to the input dataset folder.")
-    parser.add_argument(
-        "output_folder",
-        nargs="?",
-        default="../model/",
-        help="Path to the output model folder.",
-    )
-    args = parser.parse_args()
-
-    housing = load_housing_data(args.input_folder)
+def train_model(input_folder, output_folder):
+    housing = load_housing_data(input_folder)
     housing_labels = housing["median_house_value"].copy()
     housing = housing.drop("median_house_value", axis=1)
 
@@ -124,10 +112,32 @@ def main():
     final_model = grid_search.best_estimator_
 
     # Save the trained model
-    os.makedirs(args.output_folder, exist_ok=True)
-    model_path = os.path.join(args.output_folder, "trained_model.pkl")
+    os.makedirs(output_folder, exist_ok=True)
+    model_path = os.path.join(output_folder, "trained_model.pkl")
     joblib.dump(final_model, model_path)
+
+    # Log artifacts, metrics, and model
+    mlflow.log_artifact(LOG_FILE)
+    mlflow.sklearn.log_model(final_model, "trained_model")
+
     logging.info("Model Trained.")
+
+
+def main():
+    """
+    Main function to train the model.
+    """
+    parser = argparse.ArgumentParser(description="Train the model.")
+    parser.add_argument("input_folder", help="Path to the input dataset folder.")
+    parser.add_argument(
+        "output_folder",
+        nargs="?",
+        default="../model/",
+        help="Path to the output model folder.",
+    )
+    args = parser.parse_args()
+
+    train_model(args.input_folder, args.output_folder)
 
 
 if __name__ == "__main__":

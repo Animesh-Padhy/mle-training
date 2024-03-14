@@ -1,0 +1,10 @@
+2024-03-04 09:43:07,565 - INFO - Started scoring
+2024-03-04 09:43:07,694 - INFO - Scoring successfully. Root Mean Squared Error: 27609.288418128283
+2024-03-04 09:43:07,694 - INFO - Finished scoring
+2024-03-04 13:20:36,466 - INFO - Started scoring
+2024-03-04 13:20:36,530 - INFO - Scoring successfully. Root Mean Squared Error: 27609.288418128283
+2024-03-04 13:20:36,530 - INFO - Finished scoring
+2024-03-06 17:49:47,280 - INFO - Started scoring
+2024-03-06 17:49:47,432 - INFO - Scoring successfully. Root Mean Squared Error: 27609.288418128283
+2024-03-06 17:49:47,432 - INFO - Finished scoring
+2024-03-07 11:37:02,612 - ERROR - Error: 'str' object has no attribute 'predict'
