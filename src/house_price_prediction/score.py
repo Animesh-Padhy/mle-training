@@ -23,9 +23,8 @@ def load_housing_data(housing_path):
     return pd.read_csv(csv_path)
 
 
-def evaluate_model(model, housing_path, experiment_name, remote_server_url):
+def evaluate_model(model, housing_path, experiment_name):
 
-    mlflow.set_tracking_uri(remote_server_url)
     mlflow.set_experiment(experiment_name)
 
     temp1 = {}
@@ -64,11 +63,8 @@ def main():
     args = parser.parse_args()
 
     experiment_name = "HousePricePrediction"
-    remote_server_url = "http://0.0.0.0:5001"
     logging.info("Started scoring")
-    evaluate_model(
-        args.model_path, args.input_folder, experiment_name, remote_server_url
-    )
+    evaluate_model(args.model_path, args.input_folder, experiment_name)
     logging.info("Finished scoring")
 
 

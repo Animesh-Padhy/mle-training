@@ -1,0 +1,15 @@
+artifact_uri: file:///home/animesh45/TAMLEP/mle-training/mlruns/817794976055434734/76f825c0ea794c64b4ef571a06be747e/artifacts
+end_time: 1710481413446
+entry_point_name: ''
+experiment_id: '817794976055434734'
+lifecycle_stage: active
+run_id: 76f825c0ea794c64b4ef571a06be747e
+run_name: get_data
+run_uuid: 76f825c0ea794c64b4ef571a06be747e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710481413171
+status: 3
+tags: []
+user_id: animesh45

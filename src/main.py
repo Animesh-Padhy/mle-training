@@ -6,8 +6,7 @@ from house_price_prediction.ingest_data import fetch_housing_data
 
 
 def main():
-    remote_server_url = "http://0.0.0.0:5001"
-    mlflow.set_tracking_uri(remote_server_url)
+
     tracking_uri = mlflow.tracking.get_tracking_uri()
     print(f"Current tracking uri: {tracking_uri}")
 
@@ -55,7 +54,6 @@ def main():
                 "../model/trained_model.pkl",
                 "../data/housing",
                 experiment_name,
-                remote_server_url,
             )
             mlflow.log_artifact("../logs/train_data.log")
             mlflow.sklearn.log_model("../model/trained_model.pkl", "trained_model")
