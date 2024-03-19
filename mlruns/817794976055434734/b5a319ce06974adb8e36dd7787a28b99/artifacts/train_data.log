@@ -1,0 +1,30 @@
+2024-03-04 09:37:08,872 - INFO - Started training model.
+2024-03-04 09:43:05,930 - INFO - Model Trained.
+2024-03-04 09:43:05,936 - INFO - Finished training model.
+2024-03-04 13:17:11,869 - INFO - Started training model.
+2024-03-04 13:20:35,854 - INFO - Model Trained.
+2024-03-04 13:20:35,867 - INFO - Finished training model.
+2024-03-06 17:43:35,438 - INFO - Started training model.
+2024-03-06 17:49:45,817 - INFO - Model Trained.
+2024-03-06 17:49:45,835 - INFO - Finished training model.
+2024-03-07 00:17:34,276 - INFO - Started training model.
+2024-03-07 00:17:34,278 - ERROR - Error: [Errno 2] No such file or directory: '../../data/housing/housing.csv'
+2024-03-07 00:17:34,278 - INFO - Finished training model.
+2024-03-07 00:38:26,591 - INFO - Started training model.
+2024-03-07 00:38:26,593 - ERROR - Error: [Errno 2] No such file or directory: '../../data/housing/housing.csv'
+2024-03-07 00:38:26,593 - INFO - Finished training model.
+2024-03-07 00:46:14,655 - INFO - Started training model.
+2024-03-07 00:46:14,656 - ERROR - Error: [Errno 2] No such file or directory: '../../data/housing/housing.csv'
+2024-03-07 00:46:14,656 - INFO - Finished training model.
+2024-03-07 00:51:49,800 - INFO - Started training model.
+2024-03-07 00:51:49,801 - ERROR - Error: [Errno 2] No such file or directory: '../../data/housing/housing.csv'
+2024-03-07 00:51:49,801 - INFO - Finished training model.
+2024-03-07 00:53:19,469 - INFO - Started training model.
+2024-03-07 00:53:19,470 - ERROR - Error: [Errno 2] No such file or directory: '../../data/housing/housing.csv'
+2024-03-07 00:53:19,471 - INFO - Finished training model.
+2024-03-07 11:10:11,427 - INFO - Started training model.
+2024-03-07 11:10:11,428 - ERROR - Error: [Errno 2] No such file or directory: '../../data/housing/housing.csv'
+2024-03-07 11:10:11,428 - INFO - Finished training model.
+2024-03-07 11:41:27,877 - INFO - Model Trained.
+2024-03-11 17:36:16,639 - INFO - Model Trained.
+2024-03-11 17:41:48,294 - INFO - Model Trained.
