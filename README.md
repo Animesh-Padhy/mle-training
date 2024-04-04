@@ -31,6 +31,14 @@ MLflow is utilized to track parameters and metrics in the data preparation, mode
 - Created Wheel (.whl) and Source distribution (tar.gz) files.
 - Configured setuptools according to best practices for packaging Python projects.
 
+
+### Docker
+- built a Docker container for your housing price prediction library.
+- Tested the container locally to ensure it runs as expected.
+- Created a DockerHub account.
+- Pushed the Docker image to DockerHub.
+- Finally, tested pulling the image from DockerHub and running it to ensure everything works as expected. 
+
 ### download the env.yml 
 to run the script use the mle-dev enviroment
 
