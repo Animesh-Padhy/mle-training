@@ -5,7 +5,6 @@ import tarfile
 
 import pandas as pd
 import six
-import mlflow
 
 LOGS_DIR = "logs"
 os.makedirs(LOGS_DIR, exist_ok=True)
@@ -29,11 +28,7 @@ def fetch_housing_data(housing_path, housing_url=HOUSING_URL):
     housing_tgz.extractall(path=housing_path)
     housing_tgz.close()
 
-    mlflow.log_artifact(LOGS_PATH)
-    mlflow.log_param("output_folder", housing_path)
     hosuing = load_housing_data(housing_path)
-    mlflow.log_artifact(os.path.join(housing_path, "housing.csv"), "housing-data-raw")
-    mlflow.log_param("housing_url", housing_url)
 
 
 def load_housing_data(housing_path):

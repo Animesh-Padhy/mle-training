@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/449208077542052428/d39e18cb023148d2b61ac4fb8204b1e2/artifacts
+end_time: 1710496207734
+entry_point_name: ''
+experiment_id: '449208077542052428'
+lifecycle_stage: active
+run_id: d39e18cb023148d2b61ac4fb8204b1e2
+run_name: bold-foal-117
+run_uuid: d39e18cb023148d2b61ac4fb8204b1e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710496205433
+status: 3
+tags: []
+user_id: animesh45

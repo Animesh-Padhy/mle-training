@@ -16,7 +16,6 @@ from sklearn.preprocessing import OneHotEncoder
 
 
 from sklearn.base import BaseEstimator, TransformerMixin
-import mlflow
 
 
 class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
@@ -115,12 +114,6 @@ def train_model(input_folder, output_folder):
     os.makedirs(output_folder, exist_ok=True)
     model_path = os.path.join(output_folder, "trained_model.pkl")
     joblib.dump(final_model, model_path)
-
-    # Log artifacts, metrics, and model
-    mlflow.log_artifact(LOG_FILE)
-    mlflow.sklearn.log_model(final_model, "trained_model")
-
-    logging.info("Model Trained.")
 
 
 def main():

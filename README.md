@@ -26,6 +26,11 @@ The ML code has been refactored to use sklearn pipelines. Custom transformers ha
 ### MLflow Integration
 MLflow is utilized to track parameters and metrics in the data preparation, model training, and model scoring scripts. A main script orchestrates the tasks under a single parent MLflow run-id, with each child task having its own MLflow run-id.
 
+ - utilized standard Python tools and best practices to create distribution archives for our Python package.
+- Followed the Python packaging tutorial to generate distribution artifacts.
+- Created Wheel (.whl) and Source distribution (tar.gz) files.
+- Configured setuptools according to best practices for packaging Python projects.
+
 ### download the env.yml 
 to run the script use the mle-dev enviroment
 

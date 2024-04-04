@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/449208077542052428
+creation_time: 1710496192616
+experiment_id: '449208077542052428'
+last_update_time: 1710496192616
+lifecycle_stage: active
+name: ElasticNet_wine
