@@ -9,11 +9,22 @@ The following techniques have been used:
  - Decision Tree
  - Random Forest
 
-### Steps performed
- - We prepare and clean the data. We check and impute for missing values.
- - Features are generated and the variables are checked for correlation.
- - Multiple sampling techinuqies are evaluated. The data set is split into train and test.
- - All the above said modelling techniques are tried and evaluated. The final metric used to evaluate is mean squared error.
+### Scripts Overview
+- ingest_data.py: Downloads and creates training and validation datasets. Accepts the output folder/file path as a user argument.
+- train.py: Trains the model(s). Accepts arguments for input (dataset) and output folders (model pickles).
+- score.py: Scores the model(s). Accepts arguments for model folder, dataset folder, and any outputs.
+
+### Testing
+Basic tests are provided to verify correct installation. Unit tests and functional tests are included for the library.
+
+### Documentation
+The code is documented using Sphinx to generate HTML documents. Docstrings follow the Numpy docstring style.
+
+### Sklearn Pipeline Integration
+The ML code has been refactored to use sklearn pipelines. Custom transformers have been created for new features generated in the code, such as rooms_per_household, bedrooms_per_room, and population_per_household.
+
+### MLflow Integration
+MLflow is utilized to track parameters and metrics in the data preparation, model training, and model scoring scripts. A main script orchestrates the tasks under a single parent MLflow run-id, with each child task having its own MLflow run-id.
 
  - utilized standard Python tools and best practices to create distribution archives for our Python package.
 - Followed the Python packaging tutorial to generate distribution artifacts.
@@ -24,4 +35,4 @@ The following techniques have been used:
 to run the script use the mle-dev enviroment
 
 ### To excute the script
-python < scriptname.py >
+python < src/main.py >
