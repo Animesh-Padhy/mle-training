@@ -33,3 +33,6 @@
 2024-03-15 11:13:33,408 - INFO - Fetched housing data successfully.
 2024-03-15 11:15:20,436 - INFO - Model Trained.
 2024-03-15 11:15:20,585 - ERROR - Error: could not convert string to float: 'NEAR BAY'
+2024-04-03 18:38:46,875 - INFO - Started scoring
+2024-04-03 18:38:46,878 - ERROR - Error: [Errno 2] No such file or directory: 'artifacts/models/final_model.pkl'
+2024-04-03 18:38:46,878 - INFO - Finished scoring

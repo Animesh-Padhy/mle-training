@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/449208077542052428/141295a868494f248e100c99a7565559/artifacts
+end_time: 1710496210788
+entry_point_name: ''
+experiment_id: '449208077542052428'
+lifecycle_stage: active
+run_id: 141295a868494f248e100c99a7565559
+run_name: stately-goat-364
+run_uuid: 141295a868494f248e100c99a7565559
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710496208515
+status: 3
+tags: []
+user_id: animesh45

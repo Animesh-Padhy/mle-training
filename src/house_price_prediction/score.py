@@ -5,7 +5,6 @@ import joblib
 from sklearn.metrics import mean_squared_error
 import numpy as np
 import logging
-import mlflow
 
 LOG_DIR = os.path.join("./", "logs")
 os.makedirs(LOG_DIR, exist_ok=True)
@@ -25,8 +24,6 @@ def load_housing_data(housing_path):
 
 def evaluate_model(model, housing_path, experiment_name):
 
-    mlflow.set_experiment(experiment_name)
-
     temp1 = {}
     try:
         model = joblib.load(model)
@@ -42,11 +39,6 @@ def evaluate_model(model, housing_path, experiment_name):
         print(f"Root Mean Squared Error: {rmse}")
         print(f"Mean Squared Error: {mse}")
         logging.info(f"Scoring successful. Root Mean Squared Error: {rmse}")
-
-        # Log artifacts, metrics, and model
-        mlflow.log_artifact(LOG_FILE)
-        mlflow.log_metric("rmse", rmse)
-        mlflow.log_metric("mse", mse)
 
         temp1 = {"mse": mse, "rmse": rmse}
         return temp1

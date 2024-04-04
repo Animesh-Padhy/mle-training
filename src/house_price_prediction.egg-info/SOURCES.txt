@@ -3,6 +3,7 @@ setup.cfg
 setup.py
 src/main.py
 src/house_price_prediction/__init__.py
+src/house_price_prediction/check.py
 src/house_price_prediction/ingest_data.py
 src/house_price_prediction/score.py
 src/house_price_prediction/train.py

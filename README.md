@@ -15,6 +15,11 @@ The following techniques have been used:
  - Multiple sampling techinuqies are evaluated. The data set is split into train and test.
  - All the above said modelling techniques are tried and evaluated. The final metric used to evaluate is mean squared error.
 
+ - utilized standard Python tools and best practices to create distribution archives for our Python package.
+- Followed the Python packaging tutorial to generate distribution artifacts.
+- Created Wheel (.whl) and Source distribution (tar.gz) files.
+- Configured setuptools according to best practices for packaging Python projects.
+
 ### download the env.yml 
 to run the script use the mle-dev enviroment
 
